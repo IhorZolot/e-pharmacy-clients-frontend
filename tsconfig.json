@@ -13,7 +13,7 @@
       "@hooks/*": ["src/hooks/*"],
       "@styles/*": ["src/styles/*"],
       "@assets/*": ["src/assets/*"],
-      "types": ["node"]
-    }
-  }
+       "types": ["node"],
+    },
+  },
 }

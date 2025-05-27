@@ -1,0 +1,17 @@
+@use 'vars' as *;
+
+body {
+  font-family: $font-main;
+  background-color: $color-bg;
+  color: $color-text;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 100vh;
+  margin: 1.5rem;
+  overflow-x: hidden;
+}
+
+
+h1, h2, h3 {
+  font-weight: 600;
+}

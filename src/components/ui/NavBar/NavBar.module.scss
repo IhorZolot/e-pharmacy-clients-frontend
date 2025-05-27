@@ -4,6 +4,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 18px;
+}
+.navBarFooter {
+  display: flex;
+  align-items: center;
   gap: 8px;
 }
 
@@ -25,5 +30,20 @@
     transform: scale(1.1);
     color: $color-primary;
     background-color: $color-secondary;
+  }
+}
+.linkNavBarFooter{
+  display: flex;
+	align-items: center;
+	justify-content: center;
+  font-size: $font-size-sm;
+  font-weight:$font-weight-bold;
+  color: $color-bg;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    color: $color-primary-hover;
   }
 }

@@ -7,10 +7,15 @@
   cursor: pointer;
 }
 .logo {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
 }
 .span {
     font-weight: $font-weight-bold;
 		font-size: $font-size-md;
+  }
+.spanFooter {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-md;
+    color: $color-white;
   }

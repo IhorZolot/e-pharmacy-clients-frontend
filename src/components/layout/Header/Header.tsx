@@ -6,8 +6,8 @@ import styles from './Header.module.scss'
 const Header = () => {
 	return (
 		<header className={styles.header}>
-			<Logo />
-			<NavBar />
+			<Logo variant='header'  />
+			<NavBar variant='header' />
 			<div className={styles.header__burger}>
 				<CartIcon />
 				<UserAvatar />

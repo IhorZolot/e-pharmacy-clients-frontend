@@ -1,8 +1,11 @@
-import React from 'react'
+import { SpriteSVG } from '@/assets/SpriteSVG'
+import styles from './BurgerMenu.module.scss'
 
 const BurgerMenu = () => {
   return (
-    <div>Menu</div>
+    <button className={styles.burger} >
+      <SpriteSVG name='burger'/>
+    </button>
   )
 }
 

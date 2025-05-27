@@ -1,8 +1,35 @@
-.icon {
-  stroke: #4caf50;
-  transition: stroke 0.3s ease;
+@use '@/styles/vars' as *;
 
-  &:hover {
-    stroke: #388e3c;
-  }
+.icon {
+	position: relative;
+	border: $border-cart;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	color: $color-primary;
+	background-color: $color-white;
+	transition: stroke 0.3s ease;
+}
+
+.icon:hover {
+	stroke: $color-primary-hover;
+}
+
+.counter {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: $bg-color;
+	color: $color-primary;
+	font-size: 10px;
+	font-weight: bold;
 }

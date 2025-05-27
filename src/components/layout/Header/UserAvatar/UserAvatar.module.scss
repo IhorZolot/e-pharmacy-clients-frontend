@@ -1,0 +1,13 @@
+@use '@/styles/vars' as *;
+
+.avatar{
+  width: 44px;
+  height: 44px;
+  background-color: $bg-color;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $font-size-lg;
+  color: $color-primary;
+}

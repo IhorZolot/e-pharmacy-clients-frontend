@@ -1,8 +1,10 @@
-import React from 'react'
+import styles from './UserAvatar.module.scss' 
 
 const UserAvatar = () => {
   return (
-    <div>Avatar</div>
+    <div className={styles.avatar}>
+      <span>I</span>
+    </div>
   )
 }
 

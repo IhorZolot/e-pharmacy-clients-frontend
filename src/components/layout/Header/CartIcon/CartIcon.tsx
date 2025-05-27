@@ -1,8 +1,13 @@
-import { ReactComponent as CartIconSvg } from '@/assets/icons/MedLogo.svg';
+import { SpriteSVG } from '@assets/SpriteSVG'
+import styles from './CartIcon.module.scss'
+
 const CartIcon = () => {
   return (
-    <div>
-      <CartIconSvg width={24} height={24} className="icon" />
+    <div className={styles.icon}>
+      <div className={styles.counter}>
+        <span>0</span>
+      </div>
+      <SpriteSVG name='iconCart'/>
     </div>
   )
 }

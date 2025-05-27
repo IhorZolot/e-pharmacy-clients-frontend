@@ -1,11 +1,19 @@
-$color-primary: #4caf50;
-$color-text: #222;
-$color-bg: #ffffff;
-$color-border: #e0e0e0;
+// colors
+$color-primary: #59b17a;
+$color-primary-hover: #388e3c;
+$color-secondary: #59B17A 10%;
+$color-text: #1D1E21;
+$color-bg: #F7F8FA;
+$color-white: #fff;
 
-// Sizes
-$container-width: 1440px;
-$padding-page: 16px;
+
+// background-color
+$bg-color: rgba(89, 177, 122, 0.1);
+
+
+//border
+$border-cart: 1px solid rgba(241, 241, 241, 1);
+$border-button-logout: 1px solid rgba(89, 177, 122, 0.5);
 
 // Font
 $font-main: 'Inter', sans-serif;
@@ -21,6 +29,10 @@ $font-size-lg: 18px;
 $font-size-xl: 20px;
 $font-size-xxl: 24px;
 $font-size-xxxl: 28px;
+
+// Sizes
+$container-width: 1440px;
+$padding-page: 16px;
 
 // Breakpoints
 $breakpoint-mobile: 375px;

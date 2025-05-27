@@ -1,4 +1,22 @@
-export const SpriteSVG = ({ name }) => {
+type IconName =
+	| 'closeModal'
+	| 'iconCart'
+	| 'users'
+	| 'money'
+	| 'upload'
+	| 'search'
+	| 'filter'
+	| 'burger'
+	| 'map'
+	| 'phone'
+	| 'instagram'
+	| 'facebook'
+	| 'youtube'
+	| '375'
+	| '768'
+	| '1440'
+
+export const SpriteSVG = ({ name }: { name: IconName }) => {
 	switch (name) {
 		case 'closeModal':
 			return (
@@ -6,6 +24,10 @@ export const SpriteSVG = ({ name }) => {
 					<path d='M24 8 8 24M8 8l16 16' stroke='#fff' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
 				</svg>
 			)
+		case 'iconCart':
+      return (
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" clip-path="url(#a)"><path d="M6.003 14.666a.667.667 0 1 0 0-1.333.667.667 0 0 0 0 1.333ZM13.33 14.666a.667.667 0 1 0 0-1.333.667.667 0 0 0 0 1.333ZM.664.667h2.667l1.786 8.927a1.333 1.333 0 0 0 1.334 1.073h6.48a1.333 1.333 0 0 0 1.333-1.073L15.331 4H3.997"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+      )
 		case 'users':
 			return (
 				<svg width='18' height='18' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -217,4 +239,3 @@ export const SpriteSVG = ({ name }) => {
 			return 'SVG not found'
 	}
 }
-

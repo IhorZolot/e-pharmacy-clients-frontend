@@ -1,0 +1,29 @@
+@use '@styles/vars' as *;
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.linkNavBar {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+  border: $border-cart;
+  border-radius: 60px;
+  padding: 12px 24px;
+  font-size: $font-size-sm;
+  font-weight:$font-weight-regular;
+  color: $color-text-secondary;
+  text-decoration: none;
+  background-color: $color-white;
+  transition: color 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    color: $color-primary;
+    background-color: $color-secondary;
+  }
+}

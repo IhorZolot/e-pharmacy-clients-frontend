@@ -1,21 +1,20 @@
-import Logo from '../../ui/Logo/Logo'
-import CartIcon from './CartIcon/CartIcon'
-import UserAvatar from './UserAvatar/UserAvatar'
-import BurgerMenu from './BurgerMenu/BurgerMenu'
+import {CartIcon,UserAvatar, BurgerMenu } from './components'
+import { LogoutButton, Logo, NavBar } from '@/components/ui'
+
 import styles from './Header.module.scss'
-import LogoutButton from '@/components/ui/LogoutButton/LogoutButton'
 
 const Header = () => {
 	return (
-		<div className={styles.header}>
+		<header className={styles.header}>
 			<Logo />
+			<NavBar />
 			<div className={styles.header__burger}>
 				<CartIcon />
 				<UserAvatar />
 				<LogoutButton />
 				<BurgerMenu />
 			</div>
-		</div>
+		</header>
 	)
 }
 

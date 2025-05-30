@@ -1,3 +1,3 @@
 export {default as Logo } from './Logo/Logo'
-export {default as LogoutButton } from './LogoutButton/LogoutButton'
+export {default as AuthButton } from './AuthButton/AuthButton'
 export {default as NavBar } from './NavBar/NavBar'

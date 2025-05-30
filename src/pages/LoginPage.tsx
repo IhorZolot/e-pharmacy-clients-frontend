@@ -1,7 +1,8 @@
+import { MobileMenu } from '@/components'
 
 const LoginPage = () => {
   return (
-    <div>LoginPage</div>
+    <div><MobileMenu/></div>
   )
 }
 

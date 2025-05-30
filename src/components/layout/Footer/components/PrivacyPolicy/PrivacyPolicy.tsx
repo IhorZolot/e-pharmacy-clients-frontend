@@ -1,11 +1,11 @@
-import React from 'react'
+import styles from './PrivacyPolicy.module.scss'
 
 const PrivacyPolicy = () => {
   return (
-    <div>
-      <span>© E-Pharmacy 2023. All Rights Reserved</span>
-      <span>Privacy Policy</span>
-      <span>Terms & Conditions</span>
+    <div className={styles.socialNetwork} >
+      <span>© E-Pharmacy 2025. All Rights Reserved</span>
+      <a>Privacy Policy</a>
+      <a>Terms & Conditions</a>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import {CartIcon,UserAvatar, BurgerMenu } from './components'
-import { LogoutButton, Logo, NavBar } from '@/components/ui'
+import {  Logo, NavBar, AuthButton } from '@/components/ui'
 
 import styles from './Header.module.scss'
 
@@ -11,7 +11,7 @@ const Header = () => {
 			<div className={styles.header__burger}>
 				<CartIcon />
 				<UserAvatar />
-				<LogoutButton />
+				<AuthButton label="Log out" variant='logout' onClick={() => {}} />
 				<BurgerMenu />
 			</div>
 		</header>

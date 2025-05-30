@@ -1,0 +1,15 @@
+@use 'vars' as *;
+
+@mixin centerFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin base-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $font-size-sm;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}

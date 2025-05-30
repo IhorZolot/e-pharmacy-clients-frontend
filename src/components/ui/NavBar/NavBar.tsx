@@ -3,17 +3,30 @@ import linksData from '@/data/nav-link-data'
 import styles from './NavBar.module.scss'
 
 interface LogoProps {
-	variant?: 'header' | 'default'
+	variant?: 'header' | 'mobile' | 'default'
 }
 
 const NavBar = ({ variant = 'default' }: LogoProps) => {
+	const navClass =
+		variant === 'header'
+			? styles.navBar
+			: variant === 'mobile'
+			? styles.navBarMobile
+			: styles.navBarFooter
+
+	const linkClass =
+		variant === 'header'
+			? styles.linkNavBar
+			: variant === 'mobile'
+			? styles.linkNavBarMobile
+			: styles.linkNavBarFooter
 	return (
-		<nav className={ variant === 'header' ? styles.navBar : styles.navBarFooter}>
+		<nav className={ navClass}>
 			{linksData.map(link => (
 				<Link
 					key={link.name}
 					to={link.name}
-					className={variant === 'header' ? styles.linkNavBar : styles.linkNavBarFooter}
+					className={linkClass}
 				>
 					<span>{link.name}</span>
 				</Link>

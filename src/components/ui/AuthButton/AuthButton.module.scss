@@ -1,0 +1,33 @@
+@use '@/styles/vars' as *;
+
+.authButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 60px;
+	padding: 12px 24px;
+	font-weight: $font-weight-regular;
+	font-size: $font-size-sm;
+	line-height: 100%;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	background-color: transparent;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+.logout {
+		border: $border-button-logout;
+		color: $color-primary;
+}
+.register {
+	border: 1px solid $color-white;
+	color: $color-white;
+}
+.login {
+	border: none;
+	text-decoration: underline;
+	color: white;
+}

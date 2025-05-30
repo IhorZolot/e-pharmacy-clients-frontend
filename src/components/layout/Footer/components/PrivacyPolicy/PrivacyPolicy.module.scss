@@ -1,0 +1,30 @@
+@use '@styles/vars' as *;
+
+.socialNetwork {
+	border-top: $border-social;
+	padding-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+
+	span,
+	a {
+		display: inline-block;
+		font-weight: $font-weight-regular;
+		font-size: $font-size-xs;
+		line-height: 100%;
+		color: #f7f8fa;
+    cursor: pointer;
+	}
+}
+.socialNetwork a {
+	&:hover {
+		transform: scale(1.1);
+		transition: ease 0.3s;
+	}
+}
+@media screen and (min-width: $breakpoint-tablet) {
+	.socialNetwork {
+		justify-content: space-evenly;
+	}
+}

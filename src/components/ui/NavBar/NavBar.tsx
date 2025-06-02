@@ -25,7 +25,7 @@ const NavBar = ({ variant = 'default' }: LogoProps) => {
 			{linksData.map(link => (
 				<Link
 					key={link.name}
-					to={link.name}
+					to={link.path}
 					className={linkClass}
 				>
 					<span>{link.name}</span>

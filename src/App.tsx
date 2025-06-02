@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 import SharedLayout from './components/layout/SharedLayout'
 import {CartPage, HomePage, LoginPage, MedicinePage, MedicineStorePage, ProductPage, RegisterPage} from './pages'
+import NotFoundPage from './pages/NotFoundPage'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Route path='medicine' element={<MedicinePage/>}/>
       <Route path='product' element={<ProductPage/>}/>
       <Route path='cart' element={<CartPage/>}/>
+      <Route path="*" element={<NotFoundPage />} />
     </Route>
    </Routes>
   )

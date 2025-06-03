@@ -1,5 +1,5 @@
 import { useMediaQuery } from 'react-responsive'
-import { BREAKPOINTS } from '../app/breakpoints'
+import { BREAKPOINTS } from '../utils/breakpoints'
 
 export const useMedia = () => {
   const isMobile = useMediaQuery({

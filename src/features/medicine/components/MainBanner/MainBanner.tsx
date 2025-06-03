@@ -10,7 +10,7 @@ const MainBanner = () => {
 				<BurgerMenu variant='white' />
 			</div>
 			<div className={styles.content}>
-				<h2 className={styles.title}>Your medication delivered</h2>
+				<h1 className={styles.title}>Your medication delivered</h1>
 				<p className={styles.subtitle}>Say goodbye to all your healthcare worries with us</p>
 			</div>
 		</section>

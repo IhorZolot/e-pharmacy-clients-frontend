@@ -1,5 +1,6 @@
+import { ISaleBanner } from '@/types/banner'
 
-const SaleBanners = [
+const SaleBanners: ISaleBanner[] = [
   {
     id: 1,
     title: 'Huge Sale',

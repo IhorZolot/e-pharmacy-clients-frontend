@@ -1,8 +1,8 @@
-import React from 'react'
+import { MainBanner } from '@/features/medicine/components'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div><MainBanner /></div>
   )
 }
 

@@ -1,17 +1,41 @@
 @use '@/styles/vars' as *;
 
-.burger {
+.burgerGreen {
+	display: flex;
 	background-color: transparent;
 	border: none;
 	padding: 0;
+	color: $color-primary;
 	transition: transform 0.3s ease;
 
 	svg {
 		transition: fill 0.3s ease, transform 0.3s ease;
+		fill: $color-primary;
 	}
+
 	&:hover,
 	&:focus {
-		background-color: transparent;
+		svg {
+			transform: scale(1.1);
+		}
+	}
+}
+
+.burgerWhite {
+	display: flex;
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	color: $color-white;
+	transition: transform 0.3s ease;
+
+	svg {
+		transition: fill 0.3s ease, transform 0.3s ease;
+		fill: $color-white;
+	}
+
+	&:hover,
+	&:focus {
 		svg {
 			transform: scale(1.1);
 		}

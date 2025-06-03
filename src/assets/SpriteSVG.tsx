@@ -26,7 +26,7 @@ export const SpriteSVG = ({ name }: { name: IconName }) => {
 			)
 		case 'iconCart':
       return (
-       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" clip-path="url(#a)"><path d="M6.003 14.666a.667.667 0 1 0 0-1.333.667.667 0 0 0 0 1.333ZM13.33 14.666a.667.667 0 1 0 0-1.333.667.667 0 0 0 0 1.333ZM.664.667h2.667l1.786 8.927a1.333 1.333 0 0 0 1.334 1.073h6.48a1.333 1.333 0 0 0 1.333-1.073L15.331 4H3.997"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" clipPath="url(#a)"><path d="M6.003 14.666a.667.667 0 1 0 0-1.333.667.667 0 0 0 0 1.333ZM13.33 14.666a.667.667 0 1 0 0-1.333.667.667 0 0 0 0 1.333ZM.664.667h2.667l1.786 8.927a1.333 1.333 0 0 0 1.334 1.073h6.48a1.333 1.333 0 0 0 1.333-1.073L15.331 4H3.997"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"/></clipPath></defs></svg>
       )
 		case 'users':
 			return (
@@ -95,7 +95,7 @@ export const SpriteSVG = ({ name }: { name: IconName }) => {
 				<svg width='32' height='26' fill='none' xmlns='http://www.w3.org/2000/svg'>
 					<path
 						d='M28.338 13.207h-24M28.338 8.007h-24M28.338 18.407h-24'
-						stroke='#59b17a'
+						stroke='currentColor'
 						strokeWidth='2'
 						strokeLinecap='round'
 						strokeLinejoin='round'

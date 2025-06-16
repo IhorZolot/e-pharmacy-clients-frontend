@@ -16,6 +16,7 @@ type IconName =
 	| '768'
 	| '1440'
 	| 'store-card'
+	| 'lightning'
 
 export const SpriteSVG = ({ name }: { name: IconName }) => {
 	switch (name) {
@@ -255,6 +256,10 @@ export const SpriteSVG = ({ name }: { name: IconName }) => {
 						fillOpacity='0.08'
 					/>
 				</svg>
+			)
+			case 'lightning':
+			return (
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" fill="none"><path stroke="#59B17A" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m10.833 2.167-7.422 8.906c-.29.35-.436.524-.438.671a.417.417 0 0 0 .154.33c.115.093.342.093.796.093H10l-.834 6.667 7.422-8.907c.291-.349.436-.523.439-.67a.416.416 0 0 0-.155-.33c-.115-.093-.342-.093-.796-.093H10l.833-6.667Z"/></svg>
 			)
 			
 		default:

@@ -1,4 +1,4 @@
-import { MainBanner, NearestStore, PromoSection, Reviews, SaleSector } from '@/features/medicine/components'
+import { MainBanner, NearestStore, PromoSection, ReviewsSection, SaleSector } from '@/components'
 
 const HomePage = () => {
   return (
@@ -7,7 +7,7 @@ const HomePage = () => {
       <SaleSector />
       <NearestStore />
       <PromoSection/>
-      <Reviews/>
+      <ReviewsSection/>
     </div>
   )
 }

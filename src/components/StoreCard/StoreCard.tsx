@@ -3,6 +3,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn'
 import PhoneIcon from '@mui/icons-material/Phone'
 
 import styles from './StoreCard.module.scss'
+import OverlayCard from '@ui/OverlayCard/OverlayCard'
 const StoreCard = () => {
 	return (
 		<div className={styles.card}>
@@ -27,6 +28,7 @@ const StoreCard = () => {
 				<PhoneIcon className={styles.icon} />
 				<span className={styles.text}>Phone</span>
 			</div>
+      <OverlayCard />
 		</div>
 	)
 }

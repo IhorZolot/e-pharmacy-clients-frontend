@@ -1,5 +1,0 @@
-export {default as MainBanner  } from './MainBanner/MainBanner'
-export {default as SaleSector  } from './SaleSector/SaleSector'
-export {default as NearestStore  } from './NearestStore/NearestStore'
-export {default as Reviews  } from './Reviews/Reviews'
-export {default as PromoSection  } from './PromoSection/PromoSection'

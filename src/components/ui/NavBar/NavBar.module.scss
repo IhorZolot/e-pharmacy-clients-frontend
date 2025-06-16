@@ -9,7 +9,7 @@
 }
 .linkNavBar {
   @include base-link;
-  border: $border-cart;
+  border: $border-card;
   border-radius: 60px;
   padding: 12px 24px;
   font-weight:$font-weight-regular;
@@ -44,7 +44,7 @@
 }
 .linkNavBarMobile {
   @include base-link;
-  border: $border-cart;
+  border: $border-card;
   border-radius: 60px;
   padding: 12px 24px;
   font-weight:$font-weight-regular;

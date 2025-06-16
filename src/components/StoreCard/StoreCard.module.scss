@@ -1,0 +1,70 @@
+@use '@/styles/vars' as *;
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  background-color: $color-card;
+  border-radius: 26px;
+  border: $border-card;
+  width: 100%;
+  gap: 14px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.title {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-md;
+}
+.headerInfo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 6px;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+}
+.status {
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  background-color: $color-card-status;
+  color: $color-primary;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+}
+.statusClosed {
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  background-color: $color-card-status-close;
+  color: $color-card-status-text;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+}
+.info {
+  display: flex;
+  gap: 10px;
+}
+.star {
+  color: #f6c700;
+}
+.icon {
+  color: $color-primary;
+}
+.text{
+  font-size: font-size-sm;
+  font-weight: $font-weight-regular;
+  color: $color-text-secondary;
+
+}

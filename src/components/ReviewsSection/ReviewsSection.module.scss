@@ -1,0 +1,27 @@
+@use '@styles/vars' as *;
+
+.reviewsSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+.reviewsSectionHeader {
+ margin-bottom: 20px;
+}
+
+.reviewsSectionTitle {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-xxxl;
+  color: $color-text;
+  text-align: center;
+}
+
+.reviewsSectionText {
+  font-weight: $font-weight-regular;
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+  text-align: center;
+}

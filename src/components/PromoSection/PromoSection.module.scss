@@ -1,0 +1,27 @@
+@use '@styles/vars' as *;
+
+.promoSection {
+  margin-bottom: 20px;
+   
+}
+
+.promoSectionContent {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ gap: 10px;
+  padding: 20px ;
+  background-color: $color-primary;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.featuresList {
+  display: flex;
+  flex-direction:row;
+  gap: 10px;
+}
+.features {
+  display: flex;
+  gap: 10px;
+  justify-items: center;
+}

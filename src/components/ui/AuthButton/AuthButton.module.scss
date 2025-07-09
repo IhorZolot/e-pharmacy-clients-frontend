@@ -4,7 +4,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	border-radius: 60px;
 	padding: 12px 24px;
 	font-weight: $font-weight-regular;
@@ -13,6 +12,7 @@
 	transition: all 0.3s ease;
 	cursor: pointer;
 	background-color: transparent;
+	width: auto; 
 
 	&:hover {
 		transform: scale(1.1);
@@ -24,10 +24,10 @@
 }
 .register {
 	border: 1px solid $color-white;
-	color: $color-white;
+	color: $color-white-button;
 }
 .login {
 	border: none;
 	text-decoration: underline;
-	color: white;
+	color: $color-white-button;
 }

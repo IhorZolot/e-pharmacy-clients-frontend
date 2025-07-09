@@ -14,10 +14,10 @@ import {
 import rootReducer from './rootReducer';
 
 const persistConfig = {
-  key: 'user',
+  key: 'root', // змінив key на root
   storage,
-  whitelist: ['user'],
-};
+  whitelist: [], // або ['storeNearest'], якщо треба зберігати цей слайс
+}
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 

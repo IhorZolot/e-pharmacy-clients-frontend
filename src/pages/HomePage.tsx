@@ -1,11 +1,12 @@
-import { MainBanner, NearestStore, PromoSection, ReviewsSection, SaleSector } from '@/components'
+import { MainBanner,  PromoSection, ReviewsSection, SaleSector } from '@/components'
+import NearestStoreList from '@/features/store/components/NearestStoreList/NearestStoreList'
 
 const HomePage = () => {
   return (
     <div>
       <MainBanner />
       <SaleSector />
-      <NearestStore />
+      <NearestStoreList />
       <PromoSection/>
       <ReviewsSection/>
     </div>

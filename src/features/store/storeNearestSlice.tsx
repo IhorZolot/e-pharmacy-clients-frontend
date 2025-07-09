@@ -2,12 +2,11 @@ import { createSlice } from '@reduxjs/toolkit'
 import { fetchStoreNearest } from './operations'
 import { Store } from './types'
 
-interface StoreNearestState {
+export interface StoreNearestState {
   storeNearest: Store[]
   isLoading: boolean
   error: string | null
 }
-
 const initialState: StoreNearestState = {
   storeNearest: [],
   isLoading: false,

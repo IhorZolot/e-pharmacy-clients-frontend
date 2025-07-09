@@ -1,5 +1,5 @@
-import { MainBanner,  PromoSection, ReviewsSection, SaleSector } from '@/components'
-import NearestStoreList from '@/features/store/components/NearestStoreList/NearestStoreList'
+import { MainBanner,  PromoSection,  SaleSector } from '@/components'
+import {ReviewsSection, NearestStoreList} from '@/features'
 
 const HomePage = () => {
   return (

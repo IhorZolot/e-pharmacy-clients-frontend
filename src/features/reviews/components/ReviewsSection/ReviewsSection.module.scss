@@ -1,4 +1,7 @@
+@use '@styles/breakpoints' as *;
 @use '@styles/vars' as *;
+
+
 
 .reviewsSection {
   display: flex;
@@ -9,7 +12,7 @@
   padding: 20px;
 }
 .reviewsSectionHeader {
- margin-bottom: 20px;
+ margin-bottom: 30px;
 }
 
 .reviewsSectionTitle {
@@ -24,4 +27,18 @@
   font-size: $font-size-sm;
   color: $color-text-secondary;
   text-align: center;
+}
+.reviewsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+   @include respond(tablet) {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  @include respond(desktop) {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+  
 }

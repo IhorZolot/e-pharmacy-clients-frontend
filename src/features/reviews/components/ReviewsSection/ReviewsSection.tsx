@@ -4,11 +4,14 @@ import styles from './ReviewsSection.module.scss'
 import { selectReviews, selectReviewsError, selectReviewsLoading } from '../../reviewsSelectors'
 import { useEffect } from 'react'
 import { fetchReviews } from '../../operations'
+import useVisibleCards from '@/hooks/useVisibleCards'
 const ReviewsSection = () => {
   const dispatch = useAppDispatch()
   const reviews = useAppSelector(selectReviews)
   const isLoading = useAppSelector(selectReviewsLoading)
   const error = useAppSelector(selectReviewsError)
+  const visibleCount = useVisibleCards();
+
 
   useEffect(() => {
     dispatch(fetchReviews())
@@ -27,9 +30,11 @@ if (isLoading) {
         <h1 className={styles.reviewsSectionTitle}>Reviews</h1>
       <p className={styles.reviewsSectionText}>Search for Medicine, Filter by your location</p>
       </div>
-      {reviews.map(review => (
+      <div className={styles.reviewsGrid}>
+      {reviews.slice(0, visibleCount).map(review => (
         <ReviewCard key={review._id} review={review} />
       ))}
+      </div>
     </section>
   )
 }

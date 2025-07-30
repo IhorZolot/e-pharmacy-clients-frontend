@@ -4,6 +4,8 @@ export {default as StoreCard} from './StoreCard/StoreCard'
 export {default as PromoSection} from './PromoSection/PromoSection'
 export {default as MainBanner} from './MainBanner/MainBanner'
 export {default as SaleSector} from './SaleSector/SaleSector'
+export {default as Modal} from './Modal/Modal'
+
 
 
 

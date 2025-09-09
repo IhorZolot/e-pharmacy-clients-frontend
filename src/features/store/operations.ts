@@ -18,3 +18,18 @@ export const fetchStoreNearest = createAsyncThunk<Store[], void, { rejectValue: 
     }
   }
 )
+
+export const fetchStoreAll = createAsyncThunk<Store[], void, { rejectValue: ErrorResponse }>(
+  'storeAll/fetch',
+  async (_, { rejectWithValue }) => {
+    try {
+      const { data } = await API.get<Store[]>('/stores')
+      return data
+    } catch (error) {
+      const err = error as AxiosError<ErrorResponse>
+      return rejectWithValue(
+        err.response?.data || { message: 'Something went wrong' }
+      )
+    }
+  }
+)

@@ -1,8 +1,8 @@
-import React from 'react'
+import { StoreList } from '@/features'
 
 const MedicineStorePage = () => {
   return (
-    <div>MedicineStorePage</div>
+    <StoreList />
   )
 }
 

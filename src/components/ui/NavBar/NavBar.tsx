@@ -4,9 +4,10 @@ import styles from './NavBar.module.scss'
 
 interface LogoProps {
 	variant?: 'header' | 'mobile' | 'default'
+	onClose?: () => void
 }
 
-const NavBar = ({ variant = 'default' }: LogoProps) => {
+const NavBar = ({onClose, variant = 'default' }: LogoProps) => {
 	const navClass =
 		variant === 'header'
 			? styles.navBar
@@ -27,6 +28,7 @@ const NavBar = ({ variant = 'default' }: LogoProps) => {
 					key={link.name}
 					to={link.path}
 					className={linkClass}
+					onClick={onClose}
 				>
 					<span>{link.name}</span>
 				</Link>

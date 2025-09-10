@@ -1,9 +1,8 @@
+import { MedicineList } from '@/features'
 import React from 'react'
 
 const MedicinePage = () => {
-  return (
-    <div>MedicinePage</div>
-  )
+	return < MedicineList />
 }
 
 export default MedicinePage

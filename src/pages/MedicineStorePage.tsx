@@ -1,9 +1,7 @@
 import { StoreList } from '@/features'
 
 const MedicineStorePage = () => {
-  return (
-    <StoreList />
-  )
+	return < StoreList />
 }
 
 export default MedicineStorePage

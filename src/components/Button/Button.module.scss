@@ -1,0 +1,38 @@
+@use '@/styles/vars' as *;
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 148px;
+	border-radius: 30px;
+	padding: 8px 22px;
+	line-height: 150%;
+	letter-spacing: -0.02em;
+	&:hover {
+		transition: color 0.3s ease;
+		transform: scale(1.1);
+	}
+}
+
+.variant_green {
+ background: $color-primary;
+	font-weight: $font-weight-regular;
+	font-size: $font-size-xs;
+	color: $color-bg;
+}
+
+.variant_grey {
+	background: $color-card-status;
+	font-weight: $font-weight-regular;
+	font-size: $font-size-xs;
+	color: $color-primary;
+}
+
+.variant_outline {
+	background: transparent;
+	font-weight: $font-weight-regular;
+	font-size: $font-size-xs;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+}

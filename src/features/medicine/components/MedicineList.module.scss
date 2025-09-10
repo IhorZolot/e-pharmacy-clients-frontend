@@ -1,0 +1,9 @@
+@use '@/styles/vars' as *;
+
+.medicineList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}

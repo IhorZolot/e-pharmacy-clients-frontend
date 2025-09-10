@@ -1,0 +1,62 @@
+@use '@/styles/vars' as *;
+
+.medicineCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.imgMedicine {
+	border:$border-button-logout;
+	border-radius: 27px;
+	padding: 14px 18px;
+	width: 335px;
+	height: 337px;
+}
+.infoMedicineBox {
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	max-width: 335px;
+	max-height: 135px;
+	background-color: $color-bg;
+	padding: 20px;
+	justify-content: space-between;
+}
+.titleMedicineBox {
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+}
+.titleBox {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+.titleMedicine {
+	font-weight: $font-weight-bold;
+	font-size: $font-size-md;
+	line-height: 140%;
+	color: $color-text;
+}
+
+.suppliersMedicine {
+	font-weight: $font-weight-regular;
+	font-size: $font-size-xs;
+	line-height: 150%;
+	color: $placeholder-color;
+}
+
+.priceMedicine {
+	font-weight: $font-weight-bold;
+	font-size: $font-size-md;
+	line-height: 140%;
+	color: $color-text;
+}
+.buttonMedicineBox {
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+}

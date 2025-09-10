@@ -1,12 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { Store } from './types'
+import { StoreState } from './types'
 import { fetchStoreAll } from './operations'
 
-export interface StoreState {
-  store: Store[]
-  isLoading: boolean
-  error: string | null
-}
 const initialState: StoreState = {
   store: [],
   isLoading: false,

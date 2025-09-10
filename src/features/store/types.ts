@@ -17,3 +17,8 @@ export interface StoreNearestState {
   isLoading: boolean
   error: string | null
 }
+export interface StoreState {
+  store: Store[]
+  isLoading: boolean
+  error: string | null
+}

@@ -6,6 +6,6 @@ export {default as MainBanner} from './MainBanner/MainBanner'
 export {default as SaleSector} from './SaleSector/SaleSector'
 export {default as Modal} from './Modal/Modal'
 export {default as Button} from './Button/Button'
-
+export {default as Filter} from './Filter/Filter'
 
 
